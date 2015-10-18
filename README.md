@@ -44,6 +44,7 @@ Write a function that sorts a `list` of doubles and returns it.
 
 Given the following class:
 
+```cpp
 class CatTank
 {
 public:
@@ -57,5 +58,6 @@ private:
     int morality;
     std::string feelings;
 };
+```
 
 Overload the operator << so that one can directly std::cout a CatTank.
