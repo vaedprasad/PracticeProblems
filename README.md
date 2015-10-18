@@ -36,3 +36,7 @@ Define a subclass of your Shape class and call it Triangle. This time, the name 
 
 Write a function that takes in a `forward_list` and prints its contents from back to front.
 
+### Sorting a linked list
+
+Write a function that sorts a `list` of doubles and returns it.
+
