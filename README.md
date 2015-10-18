@@ -69,7 +69,7 @@ Write a proportional-integral-derivative control loop that regulates a motor val
 
 ### Sensor Mapping
 
-Imagine you are operating in a `while (true)` loop where you can get two values from a sensor, a distance reading `getDistance()` and an angle reading `getAngle()`.  From these readings compile a 2D boolean image.
+Imagine you have a constantly rotating distance sensor strapped to the top of your robot.  The sensor can read a distance value (like an ultrasonic sensor), in addition to the angle that it is currently at (0-360, clockwise where 0 is pointing forwards).  Your task is to form a 2d image of nearby obstacles using this sensor.  You are operating in a `while (true)` loop, and can call dummy functions `float getDistance()` and `float getAngle()`.  Over time build a 2D boolean array reprenting your image.
 
 ### Kinematics and Control
 
@@ -77,7 +77,7 @@ Kiwi drive is a drivetrain with three omniwheels arranged at the edges of a robo
 
 ![Kiwi drive diagram](http://i.stack.imgur.com/x6u31.png)
 
-Write a function that maps a 3d joystick input of X velocity, Y veloctity, and $\theta$ velocity scaled from -100 to 100 to three motor values scaled -100 to 100.   This question requires physics background, in particular vectors and torque.  We recommend working in groups.  
+Write a function that maps a 3d joystick input of X velocity, Y veloctity, and rotational velocity scaled from -100 to 100 to three motor values scaled -100 to 100.   This question requires physics background, in particular vectors and torque.  We recommend working in groups.  
 
 ## Computer Vision Problems
 
