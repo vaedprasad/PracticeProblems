@@ -43,6 +43,7 @@ Write a function that sorts a `list` of doubles and returns it.
 ### Overloading <<
 
 Given the following class:
+
 class CatTank
 {
 public:
