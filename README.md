@@ -67,18 +67,18 @@ Note: a lot of these problems require writing "dummy functions" to act as a simu
 
 ### Odometry
 
-You are given dummy functions `setLeftMotor(int power)` and `setRightMotor(int power)`, where power is -100 to 100 with 0 being brake.  Write a program that drives in a circle.
+You are given dummy functions `void setLeftMotor(int power)` and `void setRightMotor(int power)`, where power is -100 to 100 with 0 being brake.  Write a program that drives in a circle.
 
 Now write a program that drives in a square, assuming that while turning at full power the robot takes 0.4 seconds to turn 90 degrees.
 
-Now here comes the tricky part: write a program that drives the robot in a sin wave.  To be more clear, the robot follows an arbitrarily scaled version of the the parametric equation `y = sin(t)` , `x = 0`.  This can be seen in the below gif, where the robot position is represented by the circle.  Write a program that makes the robot move in this manner.
+Now here comes the tricky part: write a program that drives the robot in a sine wave.  To be more clear, the robot follows an arbitrarily scaled version of the the parametric equation `y = sin(t)` , `x = 0`.  This can be seen in the below gif, where the robot position is represented by the circle.  Write a program that makes the robot move in this manner.
 
 ![siny robot](http://i.giphy.com/sajxSgoRSfh60.gif)
 
 
 ### Gyroscope
 
-Imagine you have a sensor that gives you your current rotational velocity.   Write a `while (true)` that turns a specific angle by getting rotational velocity in degrees/sec from a dummy function `getGyro()`.  You can adjust your robot turning velocity with the dummy function `turn(int power)`, power being an integer from -100 to 100 (0 being brake).
+Imagine you have a sensor that gives you your current rotational velocity.   Write a `while (true)` that turns a specific angle by getting rotational velocity in degrees/sec from a dummy function `float getGyro()`.  You can adjust your robot turning velocity with the dummy function `void turn(int power)`, power being an integer from -100 to 100 (0 being brake).
 
 Now try using this sensor to keep track of robot orientation from 0-360, starting at an orientation of 0.
 
